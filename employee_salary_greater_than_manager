@@ -1,0 +1,8 @@
+create table employee5 (id integer,name string,salary integer,managerid int);
+insert into employee5(id,name,salary,managerid)
+values(1,"joe",70000,3 ),
+(2,"Henry",80000,4 ),
+(3,"Sam",60000,NULL ),
+(4,"Max",90000,NULL);
+
+select e2.name from employee6 e1,e2 where e1.id = e2.managerid and e2.salary>e1.salary;
